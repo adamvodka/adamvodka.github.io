@@ -3,4 +3,4 @@
 [strona testowa o Mickiewiczu](/test.md)
 
 
-![Adam](/mickiewicz.jpeg)
+![wiewior](https://i.redd.it/drpgpefx6zl31.jpg)
