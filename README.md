@@ -3,4 +3,4 @@
 [strona testowa o Mickiewiczu](/test.md)
 
 
-![Adam](/mickiweicz.jpg)
+![Adam](/mickiewicz.jpg)
