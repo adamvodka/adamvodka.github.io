@@ -7,4 +7,4 @@
 
 
 1st layout:
-![kwestia smaku](./kwestiasmaku.png)
+![kwestia smaku](./kwestiasmaku.png =500x500)
