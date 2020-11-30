@@ -7,8 +7,8 @@
 
 
 1st layout:
-![kwestia smaku](./kwestiasmaku.png){:height="50%" width="50%"}
+![kwestia smaku](./kwestiasmaku.png)
 
 2nd layout:
-![insta](./insta.png){:height="50%" width="50%"}
+![insta](./insta.png)
 
