@@ -1,3 +1,5 @@
+![Adam](./mickiewicz.jpeg)
+
 # Adam Bernard Mickiewicz
  (ur. 24 grudnia 1798 w Zaosiu lub Nowogródku[a][1][2], zm. 26 listopada 1855 w Stambule) – polski poeta, działacz polityczny, publicysta, tłumacz, filozof, działacz religijny, mistyk, organizator i dowódca wojskowy, nauczyciel akademicki.
 
