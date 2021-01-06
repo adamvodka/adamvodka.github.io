@@ -1,0 +1,225 @@
+body,
+p {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+main {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+}
+
+.side-panel {
+  box-sizing: border-box;
+  display: flex;
+  width: 50vw;
+  min-width: 200px;
+  flex-grow: 1;
+}
+
+.left {
+  color: #fff;
+  font-size: 20px;
+  background-image: url("./img/twitter-background.png");
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.right {
+  background-color: hsl(0, 0, 100);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-left {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap-reverse;
+  height: 100%;
+}
+
+.side-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 500px;
+  height: 200px;
+}
+
+.side-left img {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+figure {
+  display: flex;
+  align-items: center;
+}
+
+.side-left figcaption {
+  display: inline-block;
+  vertical-align: super;
+  line-height: 30px;
+}
+
+.log-in-container {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 5px;
+  width: 95%;
+  max-width: 600px;
+  height: 80px;
+  padding: 15px 15px;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: hsl(208, 18%, 44%);
+  font-size: 15px;
+  padding: 5px 0 0 10px;
+  width: 200px;
+  height: 50px;
+  background-color: hsl(200, 23%, 98%);
+  border-bottom: 2px solid hsl(208, 18%, 44%);
+}
+.name-text {
+  font-weight: 400;
+}
+
+.password {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: hsl(208, 18%, 44%);
+  font-size: 15px;
+  font-weight: 400;
+  padding: 5px 0 0 10px;
+  width: 200px;
+  height: 50px;
+  background-color: hsl(200, 23%, 98%);
+  border-bottom: 2px solid hsl(208, 18%, 44%);
+}
+
+input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  background-color:hsl(200, 23%, 98%);
+  outline: none;
+}
+
+.log-in-button {
+  color: hsl(203, 78%, 48%);
+  font-weight: 700;
+  background-color: hsl(0, 0%, 100%);
+  width: 80px;
+  height: 40px;
+  border: 1px solid hsl(203, 78%, 48%);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.log-in-button:hover {
+  background-color: hsl(205, 92%, 95%);
+}
+
+.container-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: hsl(0, 0, 100%);
+  width: 380px;
+  height: 340px;
+  line-height: 1.5;
+}
+
+.containe-right img {
+  width: 49px;
+  height: 42px;
+}
+
+.motto-1 {
+  font-size: 30px;
+}
+
+.motto-2 {
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+.register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(29, 161, 242);
+  border-radius: 20px;
+  height: 37px;
+  font-size: 15px;
+  cursor: pointer;
+  color: hsl(0, 0%, 100%);
+}
+.register:hover {
+  background-color: hsl(203, 78%, 48%);
+}
+
+.log-in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(0, 0, 100);
+  border: 1px solid rgb(29, 161, 242);
+  border-radius: 20px;
+  height: 37px;
+  font-size: 15px;
+  cursor: pointer;
+  color: hsl(203, 78%, 48%);
+}
+.log-in:hover {
+  background-color: hsl(205, 92%, 95%);
+}
+
+footer {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  padding: 10px 15px;
+  background-color: hsl(0, 0, 100);
+  min-width: 400px;
+  color: hsl(332, 6%, 52%);
+  flex-wrap: wrap;
+}
+
+footer a {
+  text-decoration: none;
+  margin: 8px 10px;
+  color: hsl(332, 6%, 52%);
+  font-weight: 400;
+  font-size: 12px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer span {
+  margin: 8px 10px;
+  font-weight: 400;
+  font-size: 12px;
+}
