@@ -59,6 +59,7 @@ body {
 }
 
 .nav {
+  width: 100%;
   position: fixed;
   background-color: #fff;
   z-index: 1;
@@ -171,7 +172,8 @@ body {
 }
 
 .banner-promo {
-  width: 25%;
+  width: 50%;
+  max-width: 300px;
   position: absolute;
   top: 0;
   left: 10%;
@@ -180,7 +182,7 @@ body {
 .banner-low {
   width: 100%;
   height: 7em;
-  padding: 0 10% 2%;
+  padding: 0 10% 20px;
   background: rgba(237, 237, 237, 0.68);
   background: -webkit-linear-gradient(
     top,
@@ -225,7 +227,7 @@ body {
 .banner-btn {
   background-color: #0070cc;
   border: 2px solid #fff;
-  padding: 1% 2%;
+  padding: 10px 30px;
   white-space: nowrap;
 }
 .banner-btn:hover {
@@ -250,4 +252,44 @@ body {
 .article-game {
   width: 30%;
   min-width: 350px;
+}
+
+@media (max-width: 900px) {
+  .banner-low {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 10em;
+  }
+
+  .banner-low > p {
+    padding: 10px 20px;
+  }
+
+
+  .main-banner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 3%;
+    flex-wrap: wrap;
+  }
+
+}
+
+@media (max-width: 650px) {
+  .main-nav-li {
+    display: none;
+  }
+
+  .sub-nav-ul {
+    display: none;
+  }
+
+  
+  .wrapper-banner {
+    width: 100%;
+    height: 50vh;
+  }
+
 }
