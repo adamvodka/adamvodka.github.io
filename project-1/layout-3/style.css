@@ -292,4 +292,12 @@ body {
     height: 50vh;
   }
 
+  .banner-promo {
+    width: 50%;
+    max-width: 200px;
+    position: absolute;
+    top: 0;
+    left: 5%;
+  }
+
 }
