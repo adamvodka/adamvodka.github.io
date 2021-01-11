@@ -99,19 +99,19 @@ h1 {
   transition-duration: 500ms;
 }
 
-.item_input--active{
+.item_input--active {
   transition-duration: 500ms;
   padding: 0.5rem 1rem;
   outline: none;
   border: none;
-  height: 50px;
-  border: 2px solid rgba(72, 61, 139, 0.5);
+  height: 35px;
+  /* border: 1px solid rgba(72, 61, 139, 0.5); */
   border-radius: 25px;
-  width: 400px;
-  margin: 0.25rem;
+  /* width: 384px; */
+  margin: 0;
   transition: 0.5s;
-  font-size: 1.15rem;
-  background-color: floralwhite;
+  font-size: 1.2rem;
+  background-color: rgba(144, 238, 144, 0.164);
 }
 
 .edit {
@@ -139,7 +139,7 @@ h1 {
 }
 
 .remove {
-    background-image: url(./delete-circle-outline.svg);
+  background-image: url(./delete-circle-outline.svg);
   background-repeat: no-repeat;
   background-position: center;
 
@@ -162,7 +162,7 @@ h1 {
   padding: 0.1rem 1rem;
 }
 
-.item-input:active{
+.item-input:active {
   padding: 0.5rem 1rem;
   outline: none;
   border: none;

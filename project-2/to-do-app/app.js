@@ -1,9 +1,9 @@
 const container = document.querySelector(".container");
-var inputValue = document.querySelector(".input");
+const inputValue = document.querySelector(".input");
 const add = document.querySelector(".add");
 
 if (window.localStorage.getItem("todo") == undefined) {
-  var todo = [];
+  const todo = [];
   window.localStorage.setItem("todo", JSON.stringify(todo));
 }
 
