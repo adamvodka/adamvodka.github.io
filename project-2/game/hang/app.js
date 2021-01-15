@@ -1,4 +1,4 @@
-// function startGame() {
+function startGame() {
   const words = [
     "kometa",
     "antyk",
@@ -57,6 +57,6 @@
   myGame();
   alert(answers.join());
   alert("Szukane słowo to : " + word);
-// }
+}
 
-// document.addEventListener("DOMContentLoaded", startGame);
+document.addEventListener("DOMContentLoaded", startGame);
