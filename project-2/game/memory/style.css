@@ -1,0 +1,194 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(138, 175, 255);
+  font-family: "Montserrat", sans-serif;
+}
+
+.game-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.invisble {
+  visibility: hidden;
+}
+
+header {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.heading {
+  font-size: 3em;
+}
+
+.tile-container {
+  display: grid;
+  grid-template-rows: 150px 150px 150px;
+  grid-template-columns: 150px 150px 150px;
+  grid-gap: 30px;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.unclickable {
+  pointer-events: none;
+}
+
+.tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 9rem;
+  transition-duration: 600ms;
+  cursor: pointer;
+  background-color: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 100%);
+  transition: 0.15s;
+  transition-duration: 300ms;
+}
+
+.tile:hover,
+.tile:focus {
+  color: hsl(0, 0%, 20%);
+  background-color: hsl(0, 0%, 95%);
+  box-shadow: 0 0 0 1px hsl(0, 0%, 10%) inset,
+    0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 1px rgba(0, 0, 0, 0.4);
+  transition-duration: 300ms;
+}
+
+.tile:active,
+.tile.activated {
+  box-shadow: 0 0 0 1px hsl(0, 0%, 10%) inset,
+    0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 1px rgba(0, 0, 0, 0.4);
+  transition-duration: 300ms;
+}
+
+.tile-1:active,
+.tile-1.activated {
+  background-color: peru;
+}
+
+.tile-2:active,
+.tile-2.activated {
+  background-color: rgb(94, 192, 91);
+}
+.tile-3:active,
+.tile-3.activated {
+  background-color: rgb(75, 194, 241);
+}
+.tile-4:active,
+.tile-4.activated {
+  background-color: slateblue;
+}
+.tile-5:active,
+.tile-5.activated {
+  background-color: yellowgreen;
+}
+.tile-6:active,
+.tile-6.activated {
+  background-color: indianred;
+}
+.tile-7:active,
+.tile-7.activated {
+  background-color: lightseagreen;
+}
+.tile-8:active,
+.tile-8.activated {
+  background-color: mediumslateblue;
+}
+.tile-9:active,
+.tile-9.activated {
+  background-color: orange;
+}
+
+
+
+.info-section {
+  text-align: center;
+}
+
+.btn-start {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  background-color: #f5f5f5;
+  color: #555;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  border-radius: 5px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  transition-duration: 500ms;
+}
+
+.btn-start:hover {
+  color: #333;
+  background-color: lightgrey;
+  border-color: #888;
+  outline: 0;
+  transition-duration: 500ms;
+}
+
+.info {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 550px) {
+  header {
+    text-align: left;
+    font-size: 0.8rem;
+  }
+
+  .game-container {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .heading {
+    font-size: 2em;
+  }
+
+  .tile-container {
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 80px 80px 80px;
+    grid-template-columns: 80px 80px 80px;
+    grid-gap: 10px;
+    margin: 0;
+  }
+
+  .tile {
+    font-size: 4rem;
+  }
+
+  .info-section {
+    text-align: left;
+  }
+}
