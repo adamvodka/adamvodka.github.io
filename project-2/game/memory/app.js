@@ -1,6 +1,7 @@
 let sequence = [];
 let playerSequence = [];
 let level = 0;
+let roundsCount;
 
 const btnStart = document.querySelector(".btn-start");
 const info = document.querySelector(".info");
@@ -54,7 +55,7 @@ function nextRound() {
 
   tileContainer.classList.add("unclickable");
   info.textContent = "Obserwuj uważnie!";
-  header.textContent = `Poziom ${level} z 10`;
+  header.textContent = `Poziom ${level} z ${roundsCount}`;
 
   const nextSequence = [...sequence];
   nextSequence.push(nextStep());
@@ -77,7 +78,7 @@ function handleClick(tile) {
   }
 
   if (playerSequence.length === sequence.length) {
-    if (playerSequence.length === 10) {
+    if (playerSequence.length === roundsCount) {
       resetGame("✨ Gratulacje ✨ Masz niesamowitą pamięć");
       return;
     }
@@ -101,7 +102,11 @@ function startGame() {
   nextRound();
 }
 
-btnStart.addEventListener("click", startGame);
+btnStart.addEventListener("click", () => {
+  roundsCount = 5;
+  startGame()
+});
+
 tileContainer.addEventListener("click", (event) => {
   const { tile } = event.target.dataset;
   if (tile) handleClick(tile);
