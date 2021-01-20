@@ -4,6 +4,9 @@ let level = 0;
 let roundsCount;
 
 const btnStart = document.querySelector(".btn-start");
+const btnLvl1 = document.querySelector(".btn-lvl-1");
+const btnLvl2 = document.querySelector(".btn-lvl-2");
+const btnLvl3 = document.querySelector(".btn-lvl-3");
 const info = document.querySelector(".info");
 const header = document.querySelector(".header");
 const tileContainer = document.querySelector(".js-container");
@@ -46,6 +49,7 @@ function playRound(nextSequence) {
 
 function nextStep() {
   const tiles = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
+  // const tiles = Array.from({ length: 9 }, (_, index) => index + 1) // =? tablica, która ma długość 9 a każdy element to index + 1.
   const random = tiles[Math.floor(Math.random() * tiles.length)];
   return random;
 }
@@ -97,14 +101,38 @@ function handleClick(tile) {
 }
 
 function startGame() {
-  btnStart.classList.add("hidden");
+  btnLvl1.classList.add('hidden');
+  btnLvl2.classList.add('hidden');
+  btnLvl3.classList.add('hidden');
   info.classList.remove("hidden");
   nextRound();
 }
 
 btnStart.addEventListener("click", () => {
-  roundsCount = 5;
-  startGame()
+  btnStart.classList.add('hidden');
+  btnLvl1.classList.remove('hidden');
+  btnLvl2.classList.remove('hidden');
+  btnLvl3.classList.remove('hidden');
+
+});
+
+btnLvl1.addEventListener("click", () => {
+  console.log('click btn1');
+  roundsCount = 5
+  startGame();
+});
+
+btnLvl2.addEventListener("click", () => {
+  console.log('click btn2');
+  roundsCount = 10
+  startGame();
+});
+
+btnLvl3.addEventListener("click", () => {
+  console.log('click btn3');
+
+  roundsCount = 15
+  startGame();
 });
 
 tileContainer.addEventListener("click", (event) => {

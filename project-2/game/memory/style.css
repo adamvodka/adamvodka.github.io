@@ -126,7 +126,7 @@ header {
   text-align: center;
 }
 
-.btn-start {
+.btn{
   display: inline-block;
   height: 38px;
   padding: 0 30px;
@@ -145,14 +145,14 @@ header {
   transition-duration: 250ms;
 }
 
-.btn-start:hover {
+.btn:hover {
   /* background-color: lightgrey; */
   box-shadow: 0px 0px 0px 3px #0070cc;
   outline: 0;
   transition-duration: 250ms;
 }
 
-.btn-start:active {
+.btn:active {
   transform: translateY(3px);
 }
 
