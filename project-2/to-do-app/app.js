@@ -7,8 +7,8 @@ if (window.localStorage.getItem("todo") == undefined) {
   window.localStorage.setItem("todo", JSON.stringify(todo));
 }
 
-var todoOut = window.localStorage.getItem("todo");
-var todo = JSON.parse(todoOut);
+const todoOut = window.localStorage.getItem("todo");
+const todo = JSON.parse(todoOut);
 
 class item {
   constructor(name) {
@@ -65,8 +65,6 @@ class item {
   }
 }
 
-// zatwierdzenie nowego todo
-
 add.addEventListener("click", check);
 window.addEventListener("keydown", (e) => {
   if (e.which == 13) {
@@ -83,6 +81,6 @@ function check() {
   }
 }
 
-for (var v = 0; v < todo.length; v++) {
-  new item(todo[v]);
+for (let i = 0; i < todo.length; i++) {
+  new item(todo[i]);
 }
