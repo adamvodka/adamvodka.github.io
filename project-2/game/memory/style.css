@@ -11,17 +11,19 @@ html {
 }
 
 body {
-  display: flex;
-  justify-content: center;
   background-color: rgb(138, 175, 255);
   font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .game-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .hidden {
@@ -47,8 +49,7 @@ header {
   grid-template-columns: 150px 150px 150px;
   grid-gap: 30px;
   position: relative;
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding: 30px 0 20px 0;
 }
 
 .unclickable {
@@ -88,7 +89,6 @@ header {
 .tile-1.activated {
   background-color: peru;
 }
-
 .tile-2:active,
 .tile-2.activated {
   background-color: chartreuse;
@@ -126,7 +126,7 @@ header {
   text-align: center;
 }
 
-.btn{
+.btn {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
@@ -146,7 +146,6 @@ header {
 }
 
 .btn:hover {
-  /* background-color: lightgrey; */
   box-shadow: 0px 0px 0px 3px #0070cc;
   outline: 0;
   transition-duration: 250ms;
@@ -171,8 +170,6 @@ header {
   }
 
   .tile-container {
-    width: 100%;
-    height: 100%;
     grid-template-rows: 80px 80px 80px;
     grid-template-columns: 80px 80px 80px;
     grid-gap: 10px;
@@ -184,6 +181,10 @@ header {
   }
 
   .info-section {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 110px;
   }
 }
