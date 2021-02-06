@@ -49,7 +49,6 @@ function playRound(nextSequence) {
 
 function nextStep() {
   const tiles = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
-  // const tiles = Array.from({ length: 9 }, (_, index) => index + 1) // =? tablica, która ma długość 9 a każdy element to index + 1.
   const random = tiles[Math.floor(Math.random() * tiles.length)];
   return random;
 }
@@ -117,20 +116,16 @@ btnStart.addEventListener("click", () => {
 });
 
 btnLvl1.addEventListener("click", () => {
-  console.log('click btn1');
   roundsCount = 5
   startGame();
 });
 
 btnLvl2.addEventListener("click", () => {
-  console.log('click btn2');
   roundsCount = 10
   startGame();
 });
 
 btnLvl3.addEventListener("click", () => {
-  console.log('click btn3');
-
   roundsCount = 15
   startGame();
 });
